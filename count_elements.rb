@@ -1,4 +1,7 @@
 def count_elements(array)
-  # code goes here
+  counted_elements = Hash.new(0)
+  array.each do |animal|
+    counted_elements[animal] = counted_elements[animal]+1
+  end
+  return counted_elements
 end
- 
